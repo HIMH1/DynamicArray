@@ -1,7 +1,9 @@
+import java.lang.reflect.Array;
+
 /**
  * Created by HIMH on 1/2/2018.
  */
-public class DynamicArray {
+public class DynamicArray{
     private int[] arr;
     public DynamicArray() {
         arr = new int[0];
@@ -27,11 +29,11 @@ public class DynamicArray {
         arr = temp;
     }
 
-    public void insertElement(int index, int element){
+    public void changeElement(int index, int element){
         arr[index] = element;
     }
 
-    public int useElement(int index){
+    public int getElement(int index){
         return arr[index];
     }
 

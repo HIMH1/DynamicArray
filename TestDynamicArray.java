@@ -1,4 +1,3 @@
-import sun.misc.FloatingDecimal;
 
 /**
  * Created by HIMH on 1/2/2018.
@@ -9,12 +8,13 @@ public class TestDynamicArray {
         dynamicArray.addElement(4);
         dynamicArray.addElement(5);
         dynamicArray.addElement(6);
-        dynamicArray.resize(4);
-        dynamicArray.insertElement(3,7);
+        dynamicArray.resize(5);
+        dynamicArray.changeElement(4,7);
         dynamicArray.removeElement(1);
 
+
         for (int i=0;i<dynamicArray.getLength();i++) {
-            System.out.println(dynamicArray.useElement(i));
+            System.out.println(dynamicArray.getElement(i));
         }
     }
 
